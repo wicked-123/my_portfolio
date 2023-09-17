@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML 5 Boilerplate</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@600&display=swap"
+    rel="stylesheet">
+</head>
+<style>
+
+</style>
+<div class="background">
+
+</div>
+
+<body style="background-color: #E3FDFD;">
+  <div class="home">
+
+    <div class="title">
+
+      <h3>Dasari Vignan</h3>
+      <div class="title-1">
+        <nav>
+          <ul style="display: flex;">
+            <li id="skills"><a href="#">skills</a></li>
+            <li id="contact"><a href="#">contact me</a></li>
+            <li id="projects"><a href="#">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="profile_class" id="profile_class">
+        <img src="me1.jpg" id="profile">
+      </div>
+      <div class="flex_row">
+        <div>
+          <h>HELLO !</h>
+
+          <div class="line"></div>
+        </div>
+        <div>
+          <div class="text">
+            <p>Iam <span>V</span>ignan with capital 'V' <img src="pngwing.com.png" style="width: 2em;"> iam a web
+              developer, designer, programmer and also a freethinker . Being an engineer has always been my passion
+              and I made it through with a strong foundation in creating dynamic and engaging digital experiences .
+              Over these years as an engineer i have gained much knowledge on programming languages such as
+              HTML,CSS,Python,Java,C++,Sql and more .Beyond my technical skills, I value collaboration and
+              communication as I posses strong communication and ethical Skills</p>
+          </div>
+        </div>
+        <div class="flex_column ">
+
+          <img onclick="insta()"
+            src="https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg">
+          <img onclick="facebook()" src="https://img.freepik.com/premium-vector/blue-social-media-logo_197792-1759.jpg">
+          <img onclick="github()" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
+          <img onclick="Linkedin()" class="linked_in"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAMAAACZQ1hUAAAAkFBMVEULZsP///////4AVrwAU7u50eW90+XI2enE2OiLqdQAYMIAWcK6yt2BnNHX5vELZcT3/P8ASbTd7fGftdgAXcHr8PYAULMgZ7/f6vUwcsKku903cLzk7vSTrtMAXbvQ3+4iar5sksxxmc60x+F+o9BhjcxXhsNBeMBSgcaHo9TM3+gAOrAyY7JcjMamv9zs9vi8DVtDAAAE/0lEQVR4nO2ca3eqOhCGMwFrjd2GbkMRjYJXus85Lf//351EREMKGHdD6AfeVVdXA8LDzORCMimC/oX6BoAfzYAxYKv3Ka6Hay9az4DtQzQStPgCB+Fi/GxJ42QRBhgaHqvKcD1nNt/GG9+WPPHZxNv5zMQOZx8AX6Y+oxTZFSXMT5ehuIPuE41BHM4nEbN9/wsFoiya5F/i4osvRimTZ3cEgRCLX9p8IfiCndfR/W8g/k6LTlRB4NIInYvFYcUfKgPMVqQrN1REVrzGF7iwAnEAUEDkijtKO8hYcIYgIGLFG1cGgJ39NqFJFLFdjR1g7zmJhQsD9UdXiDIecJ66ArhgxPmXmDy4qJWqphPdFzxyjIBolGsMa3d1ohRbVhgwRM7isRSlKRRdKCrqZeK7RhB1w58VVQMVZli7jkgp4Ywrg2ioj+7DQVhiixU7hGkPCIiugmtMYsz7cAVCm1Bh6CEkpfyFUjefvH4YkpsdYNRuB0oJ6aJP9ceAr3YYtdqBRavTaYXsj7YFAxgxUH99dtti/UYsU5gykIyX7z75u2UIQwYa83KEgSHMemG4nHbp2WZ267AZAzkBqBB2RzqGDPvq+/rYahU1YqBIe13PU+cMKAqrdghW7hkQxzqDRQgzX9Ck6gseOWdAbK76AuMXqw22GYMcd6p1M7M63jJkEIa4zCDh4n3QPQOim1HBID/jTS9ttYCYl6743FgeRJj33dN0mXCefKZTavnN3JhBBgVNI9rBhOEDDOf5AtrBjOFDDB3NWBrHpDnJw5ymdVM22KWUYlVq8UNExuNJVoowUraS9FYqyq+FU/+tkM+MRp6GDGQ3VzQphlH0XS2cn79M3rL1uJxZ+b3/E3v3m3VDhmllhntRjCfJL7UQXmVLttV62GD/frc2/wXDdUwrGJSeLHhFJBpjqK5LYAjm95p2mwzsVEz9VrpYQfRP1O6PbzIo9wv+3QVQJww8boWwyPBfPYI8ZdZaRS0xiF/Bon697uyOl7YXEnsM5QJqnR0APlpaCnu+aJP4SsuYwxEDhm1zWHbAULOQKxiem/sBuwzn5gkHdevqYfM0tGUG4J/HLMu2+1y3BT45YoBJNKWiBhA/ftIP/WoMCIsMGMLVtHxY+rrU3DFxwsAzZV2UslEVwgkD7GRjeIOIqzHhhCHR2mP26Z5hp92EZBVnOGFI9ebYB1UuGMQ4SmN4zZ36Ap8Z9Gv/Hhj6YMADw8AwMAwMA8PAMDAMDAPDwPDtuWKdQT38bQa2nSg6FJejmVo4+TL9xw7q4ffvMiBKVLUVKiJ3jj/IUOExOstcD+QmdSbFDhieespVU/PEesuXu+UuAu/HFyxUcjh7yp+Mc8UO+Og8pVcybJVc1nM+rWsKKpNMQGEQQemeQeYV33Kb+8ivvuW5XPPM3WfUeku42eFcO537QuZ/QcUO8Kf/fQfYbibcfZWNw41B/Gk57+gOAfJeAOt2wPDhMt+d7bDOIJfD8jur0zZFUmXhS90jxtNOsqjrEGKuTHhX9qklbnZoURJXUkN72K9HWcob9+vJFOqPonZ0uHmSejJVoWHfYqF9h6aQSUYs3uuLwTX7WA8dZNZfGCiLDgb7WMUPX2/8DjAI89Gcw9fV6Ia91cn6mHq+Z0++lx7XSf3NmvaYA4Q8eX6ypeeEh9CUsNC4z70e+a9VpMM+wnCFwHZUXrT+0X7w/z1wqp/A8D9yFWw5NQ6xxwAAAABJRU5ErkJggg=="
+            style="border-radius: 0; width: 50px;height:50px;">
+          <div class="contact">
+            <a href="mailto:your@email.com">contact me</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div><img class="songs" src="songs.png" id="songs"></div>
+  </div>
+
+  <div class="btech">
+    <div style="display: flex; flex-direction: column; margin-top: 100px">
+
+      <edu>Education</edu>
+      <div style="display: flex;">
+      <div class="grid">
+        <div class="grid-item" id="hover_gmr">
+          <para class="para" style="margin-bottom: 10px;">
+            GMR Institute of Technology
+          </para>
+          <para1 class="para " style="font-size: 150%; font-weight: 100">
+            B.tech in Computer Science and Egineering
+          </para1>
+          <para2 class="para " style="font-size: 120%; font-weight: 100; opacity: 80%;">2020 - Present | Rajam,India
+          </para2>
+        </div>
+        <div class="grid-item" id="gmr_img">
+          <img src="gmr logo.jpg">
+        </div>
+        <div class="grid-item " id="hover_nri">
+          <para class="para" style="margin-bottom: 10px;">
+            N.R.I Junior College
+          </para>
+          <para1 class="para " style="font-size: 150%; font-weight: 100">
+            Maths Physics Chesmitry (MPC) | state
+          </para1>
+          <para2 class="para " style="font-size: 120%; font-weight: 100; opacity: 80%;">2018 - 2020 | Rajam,India
+          </para2>
+        </div>
+        <div class="grid-item" id="nri_img">
+          <img src="nri.png">
+        </div>
+        <div class="grid-item" id="hover_kkr">
+          <para class="para" style="margin-bottom: 10px;">
+            Dr. K.K.R's Gowtham
+          </para>
+          <para1 class="para " style="font-size: 150%; font-weight: 100">
+            SSC | State
+          </para1>
+          <para2 class="para " style="font-size: 120%; font-weight: 100; opacity: 80%;">2017 - 2018 | Rajam,India
+          </para2>
+        </div>
+        <div class="grid-item" id="kkr_img">
+          <img src="kkr logo.jpeg">
+        </div>
+
+        
+      </div>
+      <div>
+        <img src="edu.png" style="width: 25em;padding-left: 200px;">
+      </div>
+
+    </div>
+  </div>
+  <div>
+    <div class="flex_co">
+      <edu style="padding-left: 10px;  font-family: 'Montserrat', sans-serif; ">My Roles </edu>
+
+    </div>
+
+    <div class="flex_co box_justify ">
+      <div class="box hidden1" id="left_skill">
+        <p1 class="mee">web Development </p1><br>
+        <p2 class="left_text">
+          Iam currently doing a course on Web development in Udemy and i have got pretty much skills in web
+          development
+        </p2>
+        <ul style="margin-top: 20% ;">
+          <li> proficient in html</li>
+          <li> proficient in css</li>
+          <li> good knowlegde on javascript</li>
+        </ul>
+        <div class="flex_co">
+          <img class="htm" src="html.png">
+          <img src="css.png">
+          <img src="javascript.png" class="js">
+        </div>
+
+      </div>
+      <div class="box" id="middle_skill">
+        <p1 class="mee">Data Structures AI</p1><br>
+        <p2>
+          Good experience in programming languags like java ,c++, python and c . implemented a deeplearning Project on
+          video processing . pretty much knowledge on data structures like arrays, trees , linked lists etc.
+        </p2>
+        <div class="flex_co">
+          <img class="htm" src="ml'.png">
+          <img src="py.png" style="width: 80px;">
+          <img src="java.png" class="js">
+        </div>
+
+      </div>
+      <div class="box hidden2" id="right_skill">
+        <p1 class="mee">UI/UX Designer</p1><br>
+        <p2>
+          Good experience in programming languags like java ,c++, python and c . implemented a deeplearning Project on
+          video processing .
+        </p2>
+        <div class="flex_co">
+          <img class="htm" src="fig.png">
+          <img src="ado.png" style="width: 70px;">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="flex_co" id="pro">
+      <edu>My Projects</edu>
+    </div>
+    <div class="flex_co prj" style="justify-content: space-evenly">
+      <a class="card flex_row" href="https://github.com/wicked-123/website-management-">
+        <div class="card-title">
+          Website Management
+        </div>
+        <div class="p2 small-desc">A front end interface of a website usng HTML and CSS
+          . The neccesary operations for a website are
+          implemented and also connected with oracle databse
+          to store and retreive the data</div>
+        <div class="small-desc1">
+          <ul>
+            <li>web interface using HTML and CSS</li>
+            <li>storing the input data through database javascript</li>
+            <li> retreiving the saved data from the web </li>
+          </ul>
+        </div>
+
+      </a>
+      <a class="card flex_row" href="https://drive.google.com/drive/folders/12bfntbSEJt0r4a0WNm122cTpMOPZT7dV">
+        <div class="card-title">
+          Driver drowsiness detection
+        </div>
+        <div class="p2 small-desc">As there are many cases regarding accidents because
+          of fatigue state of the driver . This model detects
+          whether the person is in drowsy state or not by using
+          behavioral technique
+        </div>
+        <div class="small-desc1">
+          <ul>
+            <li>facial recognition of drivers state through deep learning </li>
+            <li>an ensemble model of inceptionv3,vgg19 and resnet50</li>
+            <li> video captruing using opencv2 </li>
+          </ul>
+        </div>
+
+      </a>
+      <a class="card flex_row" href="https://drive.google.com/drive/folders/12bfntbSEJt0r4a0WNm122cTpMOPZT7dV">
+        <div class="card-title">
+          food app UX design
+        </div>
+        <div class="p2 small-desc">an intgeractive food app interface for a particular spanish restaurant
+          A figma Design for mobile window . this ap allows you
+          to order food and checkout.
+
+        </div>
+        <div class="small-desc1">
+          <ul>
+            <li>an interface using Figma </li>
+            <li>for mobile view</li>
+
+          </ul>
+        </div>
+
+      </a>
+    </div>
+  </div>
+  <div>
+    <ab class="about flex_co" id="ski"
+      style="font-family: 'Montserrat', sans-serif;padding:0;align-items: center;justify-content: center">Skills
+    </ab>
+    <div class="flex_co" style="justify-content: space-around; margin-top: 30px;">
+      <div class="flex_co " style="gap: 50px;font-family: 'Montserrat', sans-serif;font-size:2em ; font-weight:500px;">
+        <div class="flex_row" style="gap: 500px;">
+          <div>
+            python
+          </div>
+          <div>
+            C
+          </div>
+          <div>
+            HTML
+          </div>
+          <div>
+            C++
+          </div>
+        </div>
+        <div class="flex_row bars">
+          <div class="bars">
+            <div class="bbar" style="width: 100%;">
+              <div class="bar" style="width: 90%;">
+              </div>
+              <div class="percent">
+                90%
+              </div>
+
+
+            </div>
+          </div>
+          <div class="bars">
+            <div class="bbar" style="width: 100%;">
+              <div class="bar" style="width: 80%;">
+
+              </div>
+              <div class="percent">
+                80%
+              </div>
+
+            </div>
+          </div>
+          <div class="bars">
+            <div class="bbar" style="width: 100%;">
+              <div class="bar" style="width: 90%;">
+
+              </div>
+              <div class="percent">
+                90%
+              </div>
+
+            </div>
+          </div>
+          <div class="bars">
+            <div class="bbar">
+              <div class="bar">
+              </div>
+              <div class="percent">
+                80%
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="flex_co" style="gap:50px;font-family: 'Montserrat', sans-serif;font-size:2em ; font-weight:500px;">
+        <div class="flex_row">
+          <div>
+            java
+          </div>
+          <div>
+            css
+          </div>
+          <div>
+            javascript
+          </div>
+          <div>
+            SQL
+          </div>
+
+        </div>
+
+        <div class="flex_row bars" style="gap: 10px;">
+          <div class="bars">
+            <div class="bbar" style="width: 100%">
+              <div class="bar" style="width: 80%;">
+
+              </div>
+              <div class="percent">
+                80%
+              </div>
+
+            </div>
+          </div>
+          <div class="bars">
+            <div class="bbar" style="width: 100%;">
+              <div class="bar" style="width: 80%;">
+
+              </div>
+              <div class="percent">
+                80%
+              </div>
+
+            </div>
+          </div>
+          <div class="bars">
+            <div class="bbar" style="width: 100%;">
+              <div class="bar" style="width: 70% ;">
+
+              </div>
+              <div class="percent">
+                70%
+              </div>
+
+            </div>
+          </div>
+
+          <div class="bars">
+            <div class="bbar">
+              <div class="bar" style="width: 70%;">
+
+              </div>
+              <div class="percent">
+                70%
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <ab id="cert" class="about flex_co"
+      style="font-family: 'Montserrat', sans-serif;padding:0;align-items: center;justify-content: center">
+      Certifications</ab>
+
+    <div class="flex_co cert" style="position: relative;margin-top: 20px;">
+
+      <a class="div1" href="https://drive.google.com/file/d/1ifH5t30gGQoGira32SCqYXZ3GNeWOxRM/view">
+        <div class="cert_title">
+          Introduction to Machine Learning
+        </div>
+        <div class="fade">
+          by coursera
+        </div>
+        <img class="link" src="link.png">
+      </a>
+      <a class="div1" href="https://www.coursera.org/account/accomplishments/verify/ZBHDBUNHZD35">
+        <div class="cert_title">
+          Introduction to scriting in Python
+        </div>
+        <div class="fade">
+          by coursera
+        </div>
+        <img class="link" src="link.png">
+      </a>
+      <a class="div1" href="https://drive.google.com/drive/folders/11umYc3YE3_RSyWgzqcCM1VYRw0Ewygne ">
+        <div class="cert_title">
+          <div class="cert_title">
+            google UX design
+          </div>
+          <div class="fade">
+            by coursera
+          </div>
+          <img class="link" src="link.png">
+        </div>
+      </a>
+    </div>
+    <div style="position: relative;">
+      <div class="flex_co cert"
+        style="margin-bottom: 100px;margin-top: 50px;justify-content:space-evenly;position: absolute; gap:100px;left: 210px; margin-bottom: 100px;">
+        <a class="div1" href="https://www.coursera.org/account/accomplishments/verify/ZBHDBUNHZD35">
+          <div class="cert_title">
+            Algorithm Toolbox
+          </div>
+          <div class="fade">
+            by coursera
+          </div>
+          <img class="link" src="link.png">
+        </a>
+        <a class="div1" href="https://drive.google.com/file/d/14-LPDWXwJn5bQwe8az7rw1pPZUZAxb3Q/view">
+          <div class="cert_title">
+            Programming, Data Structures And Algorithms Using
+            Python
+
+          </div>
+          <div class="fade">
+            by coursera
+          </div>
+          <img class="link" src="link.png">
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <div>
+    <div style="position: relative; top: 20vh; margin-bottom: 20px;">
+      <edu>Posistions of Responsibility</edu>
+      <div class="po">
+        <div class="slider">
+          <div class="slides">
+
+            <div class="slide first" id="first">
+
+
+              <div class="design">
+              </div>
+              <div class="NSS">NSS</div>
+              <div class="des"><span style="font-size: 20px;">
+                  As a NSS leader , typically a student volunteer I have exhibited exceptional dedication,
+                  organizational
+                  skills, and a strong commitment to community service. I have played a vital role in coordinating and
+                  leading various social service activities, such as environmental initiatives, health camps, awareness
+                  campaigns, and community development projects.
+                  <br>
+                </span>
+                part of a seven day NSS camp in nearby small
+                village where we helped the villagers ,influenced
+                them, planted trees ,ran a medical camp
+                participated in several NSS rallys and camps
+                regarding AIDS day , Swatch Bharat , covid
+                vaccinaion drive , blood donation
+              </div>
+              <img src="nss pic.jpg">
+
+            </div>
+            <div class=" slide ">
+
+              <div class="design">
+                <div class="NSS" style="left: 8%;">GDSC</div>
+              </div>
+              <div class="des" style="left: 5%;width: 1000px">
+                A Google Developer Student Clubs (GDSC) Management Coordinator is a vital role within the GDSC
+                community.
+                GDSCs are student-led groups on university campuses that aim to promote and enhance students' interest
+                and
+                skills in various Google technologies and open-source development. The Management Coordinator is
+                responsible for overseeing and coordinating the overall activities of the GDSC, ensuring that the club's
+                goals are met and its mission is effectively carried out.GDSC is a club which is a club authorised by
+                google where we conduct innovative events for
+                the development of students in our college like
+                flutter workshops, firebase workshops,app
+                development workshops etc
+              </div>
+              <img src="gdsc.jpg">
+            </div>
+            <div class=" slide ">
+              <img src="3.jpg">
+            </div>
+
+
+          </div>
+        </div>
+        <div class="left" onclick="prev()">
+          <button id="left"></button>
+        </div>
+        <div class="right" onclick="next()"><button id="right"></button></div>
+      </div>
+    </div>
+  </div>
+  <div class="details_last">
+    <div style="display: flex; width: 70%;flex-wrap: wrap;padding-left: 20px;">
+      <div class="contact1">Get in Touch !</div>
+      <div style="width: 49%;" class="name">
+        <div class="lm"> Your Name</div>
+        <input type="text" class="msg lm" placeholder="Eren Yeager"></input>
+      </div>
+      <div style="width: 49%;" class="name">
+        <div class="lm"> Your Email</div>
+        <input type="text" class="msg" placeholder="eren_yeager@gmail.com"></input>
+      </div>
+      <div style="width: 49%;" class="name">
+        <div class="lm"> whats the reason</div>
+        <input type="text" class="msg" placeholder="just for a talk!"></input>
+      </div>
+      <div style="width: 49%;" class="name">
+        <div class="lm"> domain </div>
+        <select type="text" class="msg" placeholder="Design">
+          <option value="australia"> web Design</option>
+          <option value="canada">Machine Learning & deep learning project</option>
+          <option value="usa"> web development </option>
+
+        </select>
+      </div>
+      <div style="width: 85%;" class="name">
+        <div class="lm"> whats the reason</div>
+        <input type="text" class="ta lm"></input>
+      </div>
+      <button type="submit" value="submit" style="width: 15%;" class="msg1">
+        submit
+      </button>
+
+    </div>
+
+    <div class="det ">
+      <div class="deta " id="contactme">
+        Details
+      </div>
+      <div class="det1 flex_row" style="gap: 10px; height: 20px;width: 100%;top: 100px;">
+        <div>
+          <img src="pro.png">
+        </div>
+        <div style="width: 100%;">
+          Vignan Dasari
+        </div>
+      </div>
+      <div class=" det1 flex_co" style="gap: 10px;height: 20px;top: 150px;">
+        <div>
+          <img src="call.png">
+        </div>
+        <div>
+          +91 7981755273
+        </div>
+      </div>
+      <div class=" det1 flex_co" style="gap: 10px;height: 20px;top:200px;">
+        <div>
+          <img src="mail.png" style="width:30px;">
+        </div>
+        <div>
+          vignannh143@gmail.com
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@500&family=Noto+Sans+JP:wght@500&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat&family=Roboto+Mono:wght@600&display=swap');
+</style>
